@@ -84,8 +84,61 @@ name:"amount",
 value:5
 }
 ],
-color:200
+color:0
+},
+
+{
+category:"Misc",
+type:"wait",
+message:"wait %1 seconds",
+args:[
+{
+type:"field_number",
+name:"amount",
+value:1
 }
+],
+color:0
+},
+
+{
+category:"Animation",
+type:"sound",
+message:"play sound id %1",
+args:[
+{
+type:"field_number",
+name:"id",
+value:12222253
+}
+],
+color:100
+},
+
+{
+category:"Misc",
+type:"connect",
+message:"connect to thing with signal %1 for time %2 with range %3",
+args:[
+{
+type:"field_input",
+name:"signal",
+value:"Signal"
+},
+{
+type:"field_number",
+name:"time",
+value:0.1
+},
+{
+type:"field_number",
+name:"range",
+value:1e+100
+}
+
+],
+color:230
+},
 
 ]
 
@@ -120,6 +173,14 @@ Blockly.defineBlocksWithJsonArray(blocks)
 function buildToolbox(){
 
 let toolbox=document.getElementById("toolbox")
+
+// ADD VARIABLES CATEGORY FIRST
+let varCat=document.createElement("category")
+varCat.setAttribute("name","Variables")
+varCat.setAttribute("colour", CATEGORY_COLORS["Variables"] || "#ff8800")
+varCat.setAttribute("custom","VARIABLE")
+
+toolbox.appendChild(varCat)
 
 let categories={}
 
