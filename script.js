@@ -102,7 +102,7 @@ color:0
 },
 
 {
-category:"Animation",
+category:"Animations",
 type:"sound",
 message:"play sound id %1",
 args:[
