@@ -51,7 +51,7 @@ Blockly.defineBlocksWithJsonArray([
 
 {
 "type":"velocity",
-"message0":"move the player by x:%1 y:%2 z:%3",
+"message0":"move the player's cordinates by x:%1 y:%2 z:%3 (in studs)",
 "args0":[
 {
 "type":"field_number",
