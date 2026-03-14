@@ -47,6 +47,33 @@ Blockly.defineBlocksWithJsonArray([
 "previousStatement":null,
 "nextStatement":null,
 "colour":60
+},
+
+{
+"type":"velocity",
+"message0":"move the player's x:%1 y:%2 z:%3",
+"args0":[
+{
+"type":"field_number",
+"name":"x",
+"value":0
+},
+
+{
+"type":"field_number",
+"name":"y",
+"value":0
+},
+
+{
+"type":"field_number",
+"name":"z",
+"value":0
+}
+],
+"previousStatement":null,
+"nextStatement":null,
+"colour":150
 }
 
 ])
