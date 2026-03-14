@@ -1,7 +1,7 @@
 const BLOCK_DEFS = [
 
 {
-category:"Misc",
+category:"Combat",
 type:"hitbox",
 message:"deal %1 damage in a area of x:%2 y:%3 z:%4 with an offset of x:%5 y:%6 z:%7",
 args:[
