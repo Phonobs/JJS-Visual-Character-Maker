@@ -89,6 +89,13 @@ color:200
 
 ]
 
+const CATEGORY_COLORS = {
+    "Combat": "#c50000",
+    "Movement": "#abffdc",
+    "Variables": "#e95f10",
+    "Animations": "#FFFF55"
+}
+
 function registerBlocks(){
 
 let blocks=[]
@@ -131,7 +138,7 @@ for(let cat in categories){
 let catXML=document.createElement("category")
 
 catXML.setAttribute("name",cat)
-catXML.setAttribute("colour","200")
+catXML.setAttribute("colour", CATEGORY_COLORS[cat] || "#888888")
 
 categories[cat].forEach(type=>{
 
