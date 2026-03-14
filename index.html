@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JJS Moveset Editor</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/blockly/blockly.min.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>JJS Moveset Editor</h1>
+</header>
+
+<div id="editor">
+
+<div id="blocklyDiv"></div>
+
+<xml id="toolbox" style="display:none">
+
+<category name="Moves" colour="230">
+  <block type="deal_damage"></block>
+  <block type="heal"></block>
+  <block type="wait"></block>
+</category>
+
+<category name="Logic" colour="120">
+  <block type="controls_if"></block>
+  <block type="logic_compare"></block>
+</category>
+
+<category name="Variables" colour="330" custom="VARIABLE"></category>
+
+</xml>
+
+</div>
+
+<div id="controls">
+
+<button id="exportBtn">Export Code</button>
+<button id="importBtn">Import Code</button>
+
+</div>
+
+<h3>Generated JSON</h3>
+
+<textarea id="output"></textarea>
+
+<script src="script.js"></script>
+
+</body>
+</html>
