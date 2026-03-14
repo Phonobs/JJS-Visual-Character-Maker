@@ -84,7 +84,7 @@ name:"amount",
 value:5
 }
 ],
-color:60
+color:200
 }
 
 ]
