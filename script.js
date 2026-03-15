@@ -148,6 +148,7 @@ args:[
 {type:"input_value",name:"A"},
 {type:"input_value",name:"B"}
 ],
+output:"Number",
 color:260
 },
 
@@ -159,6 +160,7 @@ args:[
 {type:"input_value",name:"A"},
 {type:"input_value",name:"B"}
 ],
+output:"Number",
 color:260
 },
 
@@ -170,6 +172,7 @@ args:[
 {type:"input_value",name:"A"},
 {type:"input_value",name:"B"}
 ],
+output:"Number",
 color:260
 },
 
@@ -181,6 +184,7 @@ args:[
 {type:"input_value",name:"A"},
 {type:"input_value",name:"B"}
 ],
+output:"Number",
 color:260
 },
 
