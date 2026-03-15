@@ -94,8 +94,9 @@ type:"sound",
 message:"play sound id %1",
 args:[
 {
-type:"input_value",
-name:"id"
+type:"field_number",
+name:"id",
+value:0
 }
 ],
 color:100
