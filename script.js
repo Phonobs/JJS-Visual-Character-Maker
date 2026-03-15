@@ -140,13 +140,89 @@ value:1e+100
 color:230
 },
 
+{
+category:"Operators",
+type:"math_add",
+message:"%1 + %2",
+args:[
+{type:"input_value",name:"A"},
+{type:"input_value",name:"B"}
+],
+color:260
+},
+
+{
+category:"Operators",
+type:"math_sub",
+message:"%1 - %2",
+args:[
+{type:"input_value",name:"A"},
+{type:"input_value",name:"B"}
+],
+color:260
+},
+
+{
+category:"Operators",
+type:"math_mul",
+message:"%1 * %2",
+args:[
+{type:"input_value",name:"A"},
+{type:"input_value",name:"B"}
+],
+color:260
+},
+
+{
+category:"Operators",
+type:"math_div",
+message:"%1 / %2",
+args:[
+{type:"input_value",name:"A"},
+{type:"input_value",name:"B"}
+],
+color:260
+},
+
+{
+category:"Values",
+type:"number_value",
+message:"number %1",
+args:[
+{
+type:"field_number",
+name:"NUM",
+value:0
+}
+],
+color:230,
+output:"Number"
+},
+
+{
+category:"Values",
+type:"text_value",
+message:"text %1",
+args:[
+{
+type:"field_input",
+name:"TEXT",
+text:"hello"
+}
+],
+color:160,
+output:"String"
+}
+
 ]
 
 const CATEGORY_COLORS = {
-    "Combat": "#c50000",
-    "Movement": "#abffdc",
-    "Variables": "#e95f10",
-    "Animations": "#FFFF55"
+"Combat": "#c50000",
+"Movement": "#abffdc",
+"Variables": "#e95f10",
+"Animations": "#FFFF55",
+"Operators": "#55aaff",
+"Values": "#ffaa00"
 }
 
 function registerBlocks(){
@@ -159,8 +235,9 @@ blocks.push({
 type:def.type,
 message0:def.message,
 args0:def.args,
-previousStatement:null,
-nextStatement:null,
+previousStatement:def.output ? undefined : null,
+nextStatement:def.output ? undefined : null,
+output:def.output || undefined,
 colour:def.color
 })
 
