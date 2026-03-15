@@ -239,9 +239,9 @@ blocks.push({
 type:def.type,
 message0:def.message,
 args0:def.args,
-previousStatement:def.output ? undefined : null,
-nextStatement:def.output ? undefined : null,
-output:def.output || undefined,
+previousStatement: def.output ? undefined : null,
+nextStatement: def.output ? undefined : null,
+output: def.output || undefined,
 colour:def.color
 })
 
