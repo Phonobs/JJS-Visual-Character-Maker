@@ -125,6 +125,138 @@ color:230
 },
 
 {
+category:"Misc",
+type:"Add Awakening",
+message:"Add %1 awakening",
+args:[
+{
+type:"input_value",
+name:"awakening"
+}
+],
+color:230
+},
+
+{
+category:"Misc",
+type:"Add Evasive",
+message:"Add %1 evasive",
+args:[
+{
+type:"input_value",
+name:"evasive"
+}
+],
+color:230
+},
+
+{
+category:"Misc",
+type:"Hit Cancel",
+message:"Cancel for %1, flip? %2, freeze for %3",
+args:[
+{
+type:"input_value",
+name:"time_cancel"
+},
+{
+type:"input_value",
+name:"flip?",
+check:"Boolean"
+},
+{
+type:"input_value",
+name:"time_freeze"
+}
+],
+color:230
+},
+
+{
+category:"Misc",
+type:"Set Cooldown",
+message:"Set cooldown of %1 to move %2",
+args:[
+{
+type:"input_value",
+name:"cooldown"
+},
+{
+type:"input_value",
+name:"key"
+}
+],
+color:230
+},
+
+{
+category:"Misc",
+type:"look",
+message:"Look for %1 with smoothness %2, is horizontal locked %3, looks at the last hit %4, relative from branch %5, projectile tag %6, camera direction %7, grounded %8",
+args:[
+{
+type:"input_value",
+name:"time"
+},
+{
+type:"input_value",
+name:"smoothness"
+},
+{
+type:"input_value",
+name:"horizontal_lock"
+check:"Boolean"
+},
+{
+type:"input_value",
+name:"last_hit"
+},
+{
+type:"input_value",
+name:"branch",
+check:"Boolean"
+},
+{
+type:"input_value",
+name:"proj_tag",
+check:"string"
+},
+{
+type:"input_value",
+name:"cam_direction",
+check:"Boolean"
+},
+{
+type:"input_value",
+name:"grounded",
+check:"Boolean"
+}
+],
+color:230
+},
+
+{
+category:"Misc",
+type:"Set Melee",
+message:"Set Meele with combo %1, an offset of %2, with last hit %3",
+args:[
+{
+type:"input_value",
+name:"combo"
+},
+{
+type:"input_value",
+name:"offset"
+},
+{
+type:"input_value",
+name:"last_hit"
+}
+],
+color:230
+},
+
+{
 category:"Operators",
 type:"math_add",
 message:"%1 + %2",
@@ -200,6 +332,21 @@ text:"hello"
 ],
 color:160,
 output:"String"
+},
+
+{
+category:"Values",
+type:"bool_value",
+message:"Boolean %1",
+args:[
+{
+type:"input_value",
+name:"BOOL",
+check:"Boolean"
+}
+],
+color:160,
+output:"Boolean"
 }
 
 ]
